@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <div class="">
+      <!-- #1: I can see a title with id="title" in H1 sized text -->
+      <h1 id="title">Microsoft Tech Resilience Program Survey Form</h1>
+      <!-- #2: I can see a short explanation with id="description" in P sized text -->
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+  </head>
+  <body>
+    <!-- #3: I can see a form with id="survey-form" -->
+    <!-- #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label" -->
+    <!-- #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
+    <form id="survey-form" class="" action="index.html" method="post">
+      <div class="">
+        <!-- #4: Inside the form element, I am required to enter my name in a field with id="name" -->
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="enter your name" value="">
+      </div>
+      <br>
+      <div class="">
+        <!-- #5: Inside the form element, I am required to enter an email in a field with id="email" -->
+        <label id="email-label" for="email">Email</label>
+        <!-- #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error -->
+        <input id="email" type="email" name="email" placeholder="enter your email" value="">
+      </div>
+      <br>
+
+      <div class="">
+        <!-- #7: Inside the form, I can enter a number in a field with id="number" -->
+        <label id="number-label" for="number">Age(optional)</label>
+        <!-- #8: If I enter non-numbers in the number input, I will see an HTML5 validation error -->
+        <!--  #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error -->
+        <input id="number" type="number" min=0 max=150 name="number" placeholder="20" value="">
+      </div>
+      <br>
+      <div class="">
+        <!-- #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown" -->
+        <label for="dropdown">Which option best describes your current role?</label><br>
+        <select id="dropdown" class="" name="dropdown">
+          <option value="student">student</option>
+          <option value="tech full-time job">tech full-time job</option>
+          <option value="non-tech full-time job">non-tech full-time job</option>
+          <option value="full-time learner">full-time learner</option>
+          <option value="other">other</option>
+          <option value="prefer not to say">prefer not to say</option>
+        </select>
+      </div>
+      <br>
+      <div class="">
+        <!--  #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute -->
+        <label>What is your favorite feature of freeCodeCamp?</label><br>
+        <input type="radio" name="improve" value="Challenges">
+        <label for="Challenges">Challenges</label><br>
+
+        <input type="radio" name="improve" value="Community">
+        <label for="Community">Community</label><br>
+
+        <input type="radio" name="improve" value="Open Source">
+        <label for="Open Source">Open Source</label><br>
+
+        <input type="radio" name="improve" value="Projects">
+        <label for="Projects">Projects</label><br>
+      </div>
+      <br>
+      <div class="">
+        <!--  #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute -->
+        <label>What would you like to see improved? (Check all that apply)</label><br>
+        <input type="checkbox" name="improve" value="front">
+        <label for="front">Front-end Projects</label><br>
+
+        <input type="checkbox" name="improve" value="back">
+        <label for="back">Back-end Projects</label><br>
+
+        <input type="checkbox" name="improve" value="data">
+        <label for="data">Data Visualization</label><br>
+
+        <input type="checkbox" name="improve" value="open">
+        <label for="open">Open Source Community</label><br>
+
+        <input type="checkbox" name="improve" value="addtional">
+        <label for="addtional">Additional Courses</label><br>
+      </div>
+      <br>
+      <!-- #15: Inside the form element, I am presented with a textarea at the end for additional comments -->
+      <div class="">
+        <label for="addtional comments">Any comments or suggestions?</label><br>
+        <textarea id="addtional comments" name="addtional comments" rows="8" cols="55" placeholder="Enter your comments here">
+        </textarea>
+      </div>
+      <br>
+      <div class="">
+        <button id="submit" type="button" name="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
